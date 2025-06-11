@@ -1,0 +1,279 @@
+:root {
+    --font-nossas-lembrancas: "Aguafina Script", serif;
+    --font-nome: "Dancing Script", serif;
+    --font-principal-roboto: "Roboto", serif;
+    --teste-border: 1px solid red;
+    --cor-bege: #F9EFE8;
+    --cor-branco: #fff;
+    --cor-preto: #000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-principal-roboto);
+}
+
+.home {
+
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: var(--cor-bege);
+}
+
+.home-titulo {
+    height: 100px;
+    top: 50%;
+    align-self: center;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+}
+
+.home-titulo h1 {
+    align-self: center;
+    font-family: var(--font-nossas-lembrancas);
+    font-size: 80px;
+}
+
+.versao_2 {
+    font-family: var(--font-nossas-lembrancas);
+    font-size: 30px;
+}
+
+.home-titulo p {
+    align-self: center;
+    font-family: var(--font-nome);
+    font-size: 25px;
+}
+
+.primeira-foto,
+.lembrancas-comeco,
+.viagens{
+    margin: 5% 0;
+    display: flex;
+    justify-content: center;
+    min-height: 50vh;
+}
+
+.primeira-foto-texto {
+    width: 30%;
+    align-self: center;
+    /* gap: 20px; */
+}
+
+h1 {
+    font-family: var(--font-nossas-lembrancas);
+    font-size: 40px;
+}
+
+.primeira-foto-imagem {
+    width: 25%;
+}
+
+.primeira-foto-imagem img {
+    width: 90%;
+}
+
+.spotify {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.spotify img {
+    width: 30%;
+}
+
+.lembrancas-comeco {
+    flex-direction: column;
+    margin: 10% 0;
+}
+
+.lembrancas-comeco-texto {
+    text-align: center;
+    margin: 8% 0 2% 0;
+}
+
+.lembrancas-comeco-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.lembrancas-comeco-content-container {
+    width: 20%;
+    border-radius: 15px;
+    align-self: center;
+    background-color: var(--cor-bege);
+}
+
+.lembrancas-comeco-content p {
+    padding: 15px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.lembrancas-comeco-content-container img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.viagens {
+    display: flex;
+    margin: 18% 0 0 0;
+    align-items: center;
+    gap: 10%;
+
+}
+
+.primeira-foto-imagem img {
+    border-radius: 15px;
+}
+
+.viagens-expandido-sao-paulo {
+    display: flex;
+    margin: 5% 0;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+}
+
+.viagens-expandido-sao-paulo-texto {
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--cor-bege);
+    border-radius: 15px;
+    width: 40%;
+    height: 350px;
+}
+
+.viagens-expandido-sao-paulo-texto h1, .viagens-expandido-sao-paulo-texto p {
+    text-align: center;
+}
+
+.viagens-expandido-sao-paulo-imagem {
+    width: 30%;
+}
+
+.viagens-expandido-sao-paulo-imagem img {
+    width: 100%;
+}
+
+.negrito {
+    font-weight: bold;
+}
+
+.troca{
+    align-items: center;
+    text-align: center;
+    font-family: var(--font-nossas-lembrancas);
+}
+
+.baneario2 img {
+    width: 90%;
+}
+
+.rodape {
+    margin: 5% 0 0;
+    padding: 3%;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    background-color: #000;
+    font-size: 90%;
+}
+
+    .texto {
+      font-size: 1.1rem;
+      font-weight: bold;
+      transition: color 0.5s ease;
+    }
+
+@media (max-width: 600px) {
+    .home-titulo h1 {
+        font-size: 40px;
+    }
+
+    .home-titulo p {
+        font-size: 10px;
+    }
+
+    .primeira-foto {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-bottom: 20%;
+    }
+
+    .primeira-foto-texto {
+        width: 70%;
+        text-align: center;
+    }
+
+    .primeira-foto-imagem{
+        width: 50%;
+    }
+
+    .lembrancas-comeco {
+        display: flex;
+        align-items: center;
+    }
+    
+    .lembrancas-comeco-content {
+        top: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .lembrancas-comeco-content-container {
+        width: 60%;
+        float: none;
+        margin-bottom: 20px;
+    }
+    .viagens {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .viagens-expandido-sao-paulo{
+        flex-direction: column-reverse;
+    }
+
+    .viagens-expandido-sao-paulo-texto {
+        width: 80%;
+        height: 150px;
+    }
+
+    .viagens-expandido-sao-paulo-imagem {
+        width: 50%;
+    }
+
+    .troca{
+        width: 80%;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .font{
+        font-size: 30px;
+    }
+
+    .video {
+    transform: rotate(-90deg) scale(0.6);
+    transform-origin: center center;
+    width: 200px;   /* ajuste conforme necessário */
+    margin: 0 auto;
+    }
+
+    .rodape {
+        font-size: 70%;
+        margin: 7% 0 0;
+        padding: 7%;
+    }
+}
